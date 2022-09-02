@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/44dd64664e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container" id="wrapper">
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <h3 class="heading my-2 mx-3">MyClouds</h3>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="result" id="result">
+        <div class="show-result" id="show-result">
+          <div class="temp">
+            <span class="numb">_</span>
+            <span class="deg">°</span>C
+          </div>
+          <div class="location">
+            <img src="https://cdn-icons-png.flaticon.com/128/3425/3425073.png " width="50px" height="50px" alt="" />
+  
+            <span>_, _</span>
+          </div>
+          <div class="weather">_ _</div>
+  
+         <div class="separator"></div>
+  
+          <div class="lower">
+  
+            <div class="humidity">
+              <span class="numb-humid">_</span>
+             
+              <div class="details">
+                <span class="drop">
+                  <img src="https://cdn-icons-png.flaticon.com/128/427/427112.png " width="40px" height="40px" alt=""
+                /></span>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="separator-ver"></div>
+            <div class="column-feels">
+              <div class="temp-below">
+                <span class="numb-2">_</span><span class="deg">°</span>C
+              </div>
+             
+              <div class="details">
+                <span class="hot">
+                  <img src="https://cdn-icons-png.flaticon.com/128/1684/1684375.png " width="80px" height="80px" alt=""
+                /></span>
+                <p>feels like</p>
+              </div>  
+            </div>
+          </div>
+       
+        </div>
+      </section>
+      <section class="container2" id="middle">
+        <div class="desc">
+          <pre>
+<b>Welcome To MyClouds!!</b> 
+This global website presents OFFICIAL weather observations 
+of all the cities in the world.
+Please press <b>"Get device location"</b> button to know your surronding weather.
+ Thankyou</pre
+          >
+        </div>
+
+        <div class="search">
+          <!-- <p>Search....</p> -->
+          <span>
+            <input
+              type="text"
+              class="searchin"
+              id="searchin"
+              placeholder="Search...."
+            />
+            <button type="button" class="btn btn-search" id="searchBtn">
+              Search
+            </button>
+          </span>
+
+          <button type="button" class="btn btn-loc" id="locationBtn">
+            Get Device Location
+          </button>
+        </div>
+      </section>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
